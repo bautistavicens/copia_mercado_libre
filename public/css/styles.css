@@ -2,38 +2,50 @@ body{
     font-family: 'Roboto';
 }
 
+.burger-menu{
+    width: 35px;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    background-color: #1259c3;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 18px;
+}
+
+.header-banner{
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+.nav-bar-toggle{
+    display: none;
+}
+
+
 @media (min-width: 360px){
-    header {
-        background-color: #EAC926;
-        padding-bottom: 18px;
-    }
     .header-logo {
-        width: 80vw;
-        padding: 10vw;
-        text-align: center;
+        margin: auto;
+        padding: 5vw;
+        width: 80vw;      
     }
 
     .header-compra-coutas{
         text-align: center;
     }
-    .burger-menu{
-        width: 35px;
-        text-align: center;
-        padding: 8px;
-        color: white;
-        background-color: #1259c3;
-        margin: auto;
-        border-radius: 5px;
-    }
 
-    .header-banner{
-        width: 100%;
-        padding-top: 10px;
-
-    }
-    .nav-bar-toggle{
-        display: none;
-    }
     .search-form{
         margin-left: 30px;
     }
@@ -87,11 +99,17 @@ body{
 }
 
 @media (min-width: 769px){
-    header{
-        background-color: green;
-    }
     
+    .header-logo {
+        padding: 5vw;
+        width: 50vw;  
+    }
+
     .nav-bar-toggle{
      display: block;
+    }
+
+    .burger-menu{
+        display: none;
     }
 }
