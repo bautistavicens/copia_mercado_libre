@@ -5,14 +5,16 @@
 /*VARIABLES - START*/
 :root{
     /*COLORS - START*/
-
+    --product-article-background-color: #FFFFFF;
     --burger-menu-background-color: #1259c3;
     --footer-item-i-color: #1259c3;
     --footer-copyright-p-color: #666;
+    --html-background-color: #ebebeb;
     --header-background-color: #EAC926;
     --text-off-color: #39b54a;
     --truck-icon-color: #39b54a;
     /*COLORS - END*/
+    background-color: var(--html-background-color);
 }
 /*VARIABLES - END*/
 
@@ -51,52 +53,120 @@ header {
 /*HEADER END*/
 
 /*MAIN - START*/
-
 .article-box{
     border: 1px solid #ebebeb;
     margin: 15px;
 }
-
 .description{
-    font-size: 10px;
+    display: none;
 }
 
 .flex-container{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .flex-item{
-    margin: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form > p{
+    
+    padding: 5px;
+}
+.login-form > p > input{
+    width: 80%;
+}
+
+.login-section{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.login-section .login-btn {
+    background-color: #1259c3;
+    color:#FFFFFF;
+    font-weight: bold;
+    width: 80%;
+    border-radius: 5px;
 }
 
 main{
-    width: 90%;
     margin: auto;
+    width: 90%;
 }
 
 .off{
-    font-size: 10px;
     color: var(--text-off-color);
+    font-size: 16px;
+}
+
+
+.perfil-usuario-container .label{
+    font-weight: bold;
+    font-size: 16x;
 }
 
 .price{
-    font-size: 12px;     
+    font-size: 18px;
 }
 
 .product-article {
-    width: 30%;
+    width: 100%;
+    text-align: left;
+    background-color: var(--product-article-background-color);
 }
 
-.product-article img{
+.product-article > img{
     width: 100%;
+    text-align: center;
+}
+.product-section{
+   align-items: center;
+}
+
+.radio-div .radio-item{
+    margin-top: 15px;
+}
+
+.register-form > p {
+    text-align: center;
+}
+.register-form  .perfil-usuario-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.register-form > p > input {
+    width: 80%;
+}
+
+.register-section > a {
+    text-align: center;
+}
+.register-section > a >.register-btn {
+    background-color: #1259c3;
+    color:#FFFFFF;
+    font-weight: bold;
+    width: 170px;
+    border-radius: 5px;
+    margin-top: 50px;
+  
 }
 
 #search-form-input{
     width: 50%;
+    border-radius: 5px;
 }
+
 
 #truck-icon{
    color: var(--truck-icon-color); 
@@ -104,6 +174,31 @@ main{
 
 /*MAIN - END*/
 
+/* FOOTER - START */
+footer {
+    padding: 18px;
+}
+
+.footer-item {
+    padding: 18px;
+    text-align: center;
+
+}
+
+.footer-item > i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--footer-item-i-color);
+}
+.footer-item > h3 {
+    font-size: 16px;
+}
+
+.footer-copyright > p {
+    color: var(--footer-copyright-p-color);
+    text-align: left;
+}
+/*FOOTER - END*/
 @media (min-width: 360px){
 
 /*HEADER -START*/
@@ -126,52 +221,13 @@ main{
         font-size: 24px;
     }
 
-    .description{
-        font-size: 16px;
-    }
 
-    .price{
-        font-size: 18px;     
-    }
-
-    .off{
-        font-size: 16px;
-    }
-    .register-form > p {
-        text-align: center;
-    }
 /*MAIN-END*/
-
-/* FOOTER - START */
-    footer {
-        padding: 18px;
-    }
-    
-    .footer-item {
-        padding: 18px;
-        text-align: center;
-
-    }
-  
-    .footer-item > i {
-        font-size: 2em;
-        margin-bottom: 10px;
-        color: var(--footer-item-i-color);
-    }
-    .footer-item > h3 {
-        font-size: 16px;
-    }
-  
-    .footer-copyright > p {
-        color: var(--footer-copyright-p-color);
-        text-align: left;
-    }
-/*FOOTER - END*/
 }
-
 @media (min-width: 769px){
     
 /*HEADER - START*/
+
     .header-compra-coutas{
         font-size: 16px;
     }
@@ -188,4 +244,30 @@ main{
         display: none;
     }
 /*HEADER - END*/
+
+/*MAIN - START*/
+    .article-box{
+        border: 1px solid #ebebeb;
+        margin: 15px;
+    }
+
+    .description{
+        display: block;
+        font-size: 16px;  
+    }
+    .flex-container{
+        flex-direction: row;
+    }
+    
+    .product-article {
+        width: 30%;
+    }
+/*MAIN - END*/
+
+/*FOOTER - START*/
+    .footer-section{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+/*FOOTER - END*/
 }

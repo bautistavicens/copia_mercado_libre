@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/47b81c9b5a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Document</title>
+    <title>Inicia sesión</title>
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@
             <img src="/images/logo-mercado-liebre.svg" alt="Logo de Merecado Libre">
             </a>
         </div>
-            
+        
         <!--Search bar-->
         <form action="" class="search-form">
             <input type="search" id="search-form-input" name="search-form-input" placeholder="Buscar productos, marcas">
@@ -27,7 +27,7 @@
                 <i class="fa fa-search"></i>
             </label>
         </form>
-            
+        
         <p class="header-compra-coutas"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         <!--Nav Bar-->
         <nav class="nav-bar-toggle">
@@ -36,11 +36,11 @@
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
-            </ul>   
+            </ul>
         </nav>
         <nav class="nav-bar-toggle">
             <ul>
-                <li><a href="#">Creá tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
+                <li><a href="/register">Creá tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
                 <li ><a href="/login">Ingresá</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
                 <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
@@ -50,42 +50,21 @@
             <i class="fas fa-bars"></i>
         </div> 
         <!--Banner-->
-            <img src="/images/img-home-banner.jpg" alt="Banner" class="header-banner">
+        <img src="/images/img-home-banner.jpg" alt="Banner" class="header-banner">
     </header>
     <main>
-        <section class="register-section">
-            <form action="/register" method="POST" class="register-form">
+        <section class="login-section">
+            <form action="/login" class="login-form" method="POST">
                 <p>
-                    <input type="text" name="nombre-apellido" id="nombre" placeholder="Nombre y apellido">   
+                    <input type="email" name="email" placeholder="Email">
                 </p>
                 <p>
-                    <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+                    <input type="password" name="contrasena" placeholder="Contraseña">
                 </p>
-                <p>
-                    <input type="email" name="email" id="email" placeholder="E-Mail">        
-                </p>
-                <p>
-                    <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
-                </p>
-                <p>
-                    <input type="password" name="confirmar-contrasena" id="confirmar-contrasena" placeholder="Confirmar Contraeña">
-                </p>
-                <div class="perfil-usuario-container">
-                    <label for="perfil-usuario" class="label">Perfil de usuario</label><br>
-                    <input type="radio" name="perfil-usuario" class="radio-btn" value="Comprador">Comprador</input>
-                    <input type="radio" name ="perfil-usuario" class="radio-btn" value="Vendedor">Vendedor</input>
-                </div>
-                <div class="radio-div">
-                    <label for="intereses-radio" class="radio-lbl">Intereses</label><br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Electro">Electro<br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Moda">Moda<br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Hogar">Hogar<br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Juegueteria">Jugueteria<br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Vida sana">Vida sana<br>
-                </div>
             </form>
-            <a href="/"><button class="register-btn">Registrarme!</button></a>
+            <a href="/"><button type="submit" class="login-btn">Enviar</button></a>
         </section>
+
     </main>
     <footer>
         <section class="footer-section">
