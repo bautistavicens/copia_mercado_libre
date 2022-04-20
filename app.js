@@ -5,9 +5,8 @@ const app = express();
 const path = require('path');
 
 //express server port
-const port = 3030;
 
-app.listen(port, () =>{
+app.listen(process.env.PORT || 3000, () =>{
  console.log("Server status: Online.")
 });
 
