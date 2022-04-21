@@ -30,17 +30,15 @@
             
         <p class="header-compra-coutas"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         <!--Nav Bar-->
-        <nav class="nav-bar-toggle">
-            <ul>
-                <li> <a href="#">Ofertas</a></li>
+        <nav class="nav-bar">
+            <ul class="list-1">
+                <li> <a href="/#ofertas">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
-            </ul>   
-        </nav>
-        <nav class="nav-bar-toggle">
-            <ul>
-                <li><a href="#">Creá tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
+            </ul>
+            <ul class="list-2">
+                <li><a href="/register">Creá tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
                 <li ><a href="/login">Ingresá</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
                 <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
@@ -55,33 +53,31 @@
     <main>
         <section class="register-section">
             <form action="/register" method="POST" class="register-form">
-                <p>
-                    <input type="text" name="nombre-apellido" id="nombre" placeholder="Nombre y apellido">   
-                </p>
-                <p>
-                    <input type="text" name="username" id="username" placeholder="Nombre de usuario">
-                </p>
-                <p>
-                    <input type="email" name="email" id="email" placeholder="E-Mail">        
-                </p>
-                <p>
-                    <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
-                </p>
-                <p>
-                    <input type="password" name="confirmar-contrasena" id="confirmar-contrasena" placeholder="Confirmar Contraeña">
-                </p>
+                <input type="text" name="nombre-apellido" id="nombre" placeholder="Nombre y apellido">   
+                <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+                <input type="email" name="email" id="email" placeholder="E-Mail">        
+                <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
+                <input type="password" name="confirmar-contrasena" id="confirmar-contrasena" placeholder="Confirmar Contraeña">
                 <div class="perfil-usuario-container">
                     <label for="perfil-usuario" class="label">Perfil de usuario</label><br>
                     <input type="radio" name="perfil-usuario" class="radio-btn" value="Comprador">Comprador</input>
                     <input type="radio" name ="perfil-usuario" class="radio-btn" value="Vendedor">Vendedor</input>
                 </div>
-                <div class="radio-div">
-                    <label for="intereses-radio" class="radio-lbl">Intereses</label><br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Electro">Electro<br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Moda">Moda<br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Hogar">Hogar<br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Juegueteria">Jugueteria<br>
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Vida sana">Vida sana<br>
+                <label for="intereses-radio" class="radio-lbl">Intereses</label><br>
+                <div class="radio-item-container">
+                    <input type="radio" class="radio-item" name="intereses-radio" value="Electro">
+                </div>
+                <div class="radio-item-container">
+                    <input type="radio" class="radio-item" name="intereses-radio" value="Moda">
+                </div>
+                <div class="radio-item-container">
+                    <input type="radio" class="radio-item" name="intereses-radio" value="Hogar"><br>
+                </div>
+                <div class="radio-item-container">
+                    <input type="radio" class="radio-item" name="intereses-radio" value="Juegueteria"><br>
+                </div>
+                <div class="radio-item-container">
+                    <input type="radio" class="radio-item" name="intereses-radio" value="Vida sana"><br>
                 </div>
             </form>
             <a href="/"><button class="register-btn">Registrarme!</button></a>
