@@ -55,35 +55,40 @@
     </header>
     <main>
         <section class="register-section">
-            <form action="/register" method="POST" class="register-form">
+            <h1>Crea tu cuenta!</h1>
+            <form action="/" class="register-form">
                 <input type="text" name="nombre-apellido" id="nombre" placeholder="Nombre y apellido">   
                 <input type="text" name="username" id="username" placeholder="Nombre de usuario">
                 <input type="email" name="email" id="email" placeholder="E-Mail">        
                 <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
                 <input type="password" name="confirmar-contrasena" id="confirmar-contrasena" placeholder="Confirmar Contraeña">
+                <h3>Perfil de usuario</h3>
                 <div class="perfil-usuario-container">
-                    <label for="perfil-usuario" class="label">Perfil de usuario</label><br>
-                    <input type="radio" name="perfil-usuario" class="radio-btn" value="Comprador">Comprador</input>
-                    <input type="radio" name ="perfil-usuario" class="radio-btn" value="Vendedor">Vendedor</input>
+                    <div>
+                        <input type="radio" id="radio-comprador" name="perfil-usuario" class="radio-btn" value="Comprador">
+                        <label for="radio-comprador"></label>Comprador
+                    </div>
+                    <div>
+                        <input type="radio" id="radio-vendedor" name ="perfil-usuario" class="radio-btn" value="Vendedor">
+                        <label for="radio-vendedor">Vendedor</label>
+                    </div>
                 </div>
-                <label for="intereses-radio" class="radio-lbl">Intereses</label><br>
-                <div class="radio-item-container">
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Electro">
-                </div>
-                <div class="radio-item-container">
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Moda">
-                </div>
-                <div class="radio-item-container">
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Hogar"><br>
-                </div>
-                <div class="radio-item-container">
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Juegueteria"><br>
-                </div>
-                <div class="radio-item-container">
-                    <input type="radio" class="radio-item" name="intereses-radio" value="Vida sana"><br>
-                </div>
+                <fieldset class="register__intereses-fieldset">
+                    <legend>Intereses</legend>
+                    <input type="checkbox" id="checkbox-electro" class="checkbox-item" name="intereses-radio" value="Electro">
+                    <label for="checkbox-electro">Electro</label> <br>
+                    <input type="checkbox" id="checkbox-moda" class="checkbox-item" name="intereses-radio" value="Moda">
+                    <label for="checkbox-moda">Moda</label> <br>
+                    <input type="checkbox" id="checkbox-hogar" class="checkbox-item" name="intereses-radio" value="Hogar">
+                    <label for="checkbox-hogar">Hogar</label> <br>
+                    <input type="checkbox" id="checkbox-jugueteria" class="checkbox-item" name="intereses-radio" value="Juegueteria">
+                    <label for="checkbox-jugueteria">Jugueteria</label> <br>
+                    <input type="checkbox" id="checkbox-vida-sana" class="checkbox-item" name="intereses-radio" value="Vida sana">
+                    <label for="checkbox-vida-sana">Vida sana</label><br>
+
+                </fieldset>
+                <button class="register-btn">Registrarme!</button>
             </form>
-            <a href="/"><button class="register-btn">Registrarme!</button></a>
         </section>
     </main>
     <footer>

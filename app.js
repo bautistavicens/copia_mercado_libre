@@ -24,6 +24,4 @@ app.get("/login", (req, res) => {
 
 app.use(express.static("public"));
 
-//TEST
-//test
 
