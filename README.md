@@ -15,6 +15,6 @@ If you want to run this app in local you'll have to run some commands:
 Also, you can try "npm run dev" to run the app with nodemon.
 
 ----
-## Site URL
+## Site URL (local)
 
 http://localhost:3000/
