@@ -14,25 +14,28 @@
 <body>
     <header>
         <!--Logo-->
-        <div class="header-logo">
-            <a href="/">
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo de Merecado Libre">
-            </a>
-        </div>
+        <section class="header__container-1">
+            <div class="header-logo">
+                <a href="/">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de Merecado Libre">
+                </a>
+            </div>
         
-        <!--Search bar-->
-        <form action="" class="search-form">
-            <input type="search" id="search-form-input" name="search-form-input" placeholder="Buscar productos, marcas">
-            <label for="search-form-input">
+            <!--Search bar-->
+            <form action="" class="search-form">
+                <input type="search" id="search-form-input" name="search-form-input" placeholder="Buscar productos, marcas">
+                <label for="search-form-input">
                 <i class="fa fa-search"></i>
-            </label>
-        </form>
+                </label>
+            </form>
+            <!--text-->
+            <p class="header-compra-coutas"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         
-        <p class="header-compra-coutas"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </section>
         <!--Nav Bar-->
         <nav class="nav-bar">
             <ul class="list-1">
-                <li> <a href="/#ofertas">Ofertas</a></li>
+                <li> <a href="#ofertas">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
@@ -50,18 +53,15 @@
         <!--Banner-->
         <img src="/images/img-home-banner.jpg" alt="Banner" class="header-banner">
     </header>
-    <main>
-        <section class="login-section">
-            <form action="/login" class="login-form" method="POST">
-                <p>
-                    <input type="email" name="email" placeholder="Email">
-                </p>
-                <p>
-                    <input type="password" name="contrasena" placeholder="Contraseña">
-                </p>
-            </form>
-            <a href="/"><button type="submit" class="login-btn">Enviar</button></a>
-        </section>
+    <main class="login__main">
+        <h1>Iniciar Sesión</h1>
+        <form action="/" class="login-form">
+            <input type="email" class="login__email-input" name="email" placeholder="Email">
+
+            <input type="password" class="login__password-input" name="password" placeholder="Contraseña">
+
+            <button type="submit" class="login-btn">Enviar</button>
+        </form>
 
     </main>
     <footer>
