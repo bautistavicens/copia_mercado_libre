@@ -1,6 +1,4 @@
-const exp = require('constants');
 const express = require('express');
-const res = require('express/lib/response');
 const app = express();
 const path = require('path');
 
