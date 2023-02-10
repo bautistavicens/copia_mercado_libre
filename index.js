@@ -20,6 +20,5 @@ app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/login.html"));
 });
 
-app.use(express.static("public"));
-
+app.use(express.static(__dirname + "/public/"));
 
